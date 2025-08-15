@@ -1,0 +1,114 @@
+
+.banner-btn{
+    animation: btn;
+    animation-duration: 1s;
+
+}
+@keyframes btn{
+    0%{
+        
+        transform: scale(0.5);
+    }
+    100%{
+        
+         transform: scale(1);
+    
+    }
+}
+
+.banner-logo2{
+    animation-name: ironman;
+    animation-duration: 1s;
+}
+@keyframes ironman{
+    0%{
+        filter: blur(3px) contrast(3);
+        transform: scale(0.8);
+    }
+    100%{
+          filter: none;
+        transform: scale(1);
+    }
+}
+
+.img-box{
+    animation-name:spider ;
+    animation-timeline: view();
+}
+@keyframes  spider {
+
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+          transform: translateX(0px);
+    }
+    
+}
+
+.details-box{
+    animation-name:details ;
+    animation-timeline: view();
+    animation-range: entery 20% cover 100%;
+}
+@keyframes details {
+
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+          transform: translateX(0px);
+    }
+    
+}
+
+.headline{
+    animation-name: text2;
+     animation-timeline: view();
+
+}
+@keyframes text2 {
+
+    0%{
+        transform: scale(0.7);
+    }
+    100%{
+          transform: scale(1);
+    }
+    
+}
+
+.box-img{
+    animation-name: box-img ;
+     animation-timeline: view();
+}
+@keyframes box-img{
+  0%{
+        filter:saturate(0) contrast(4) brightness(0.1) blur(4px);
+       opacity: 0;
+       scale: 0.7;
+       translate: 0 4rem;
+    }
+  100%{
+          filter: blur(0px);
+        scale: 1;
+        opacity: 1;
+        translate: 0 0;
+
+    }
+}
+
+.banner-3{
+    animation: banner3;
+      animation-timeline: view();
+}
+@keyframes banner3{
+    0%{
+        filter: blur(0);
+       
+    }
+    100%{
+          filter: blur(4px);
+    
+    }
+}
