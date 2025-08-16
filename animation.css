@@ -18,12 +18,12 @@
 
 .banner-logo2{
     animation-name: ironman;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 @keyframes ironman{
     0%{
         filter: blur(3px) contrast(3);
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
     100%{
           filter: none;
@@ -78,7 +78,19 @@
     
 }
 
-.box-img{
+#img1{
+    animation-name: box-img ;
+     animation-timeline: view();
+}
+#img2{
+    animation-name: box-img ;
+     animation-timeline: view();
+}
+#img3{
+    animation-name: box-img ;
+     animation-timeline: view();
+}
+#img4{
     animation-name: box-img ;
      animation-timeline: view();
 }
@@ -90,7 +102,7 @@
        translate: 0 4rem;
     }
   100%{
-          filter: blur(0px);
+          filter: none;
         scale: 1;
         opacity: 1;
         translate: 0 0;
@@ -112,3 +124,71 @@
     
     }
 }
+
+.banner-logo{
+    animation-name: bannertext;
+    animation-duration:2s ;
+}
+
+@keyframes bannertext{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+#box4-12first{
+    animation-name: box;
+    animation-timeline: view();
+    animation-range: entery 0% cover 25% ;
+}
+#box4-12second{
+     animation-name: box22;
+    animation-timeline: view();
+    animation-range: entery 25% cover 50% ;
+}
+#box4-12third{
+    animation-name: box;
+    animation-timeline: view();
+    animation-range: entery 50% cover 75% ;
+}
+#box4-12four{
+     animation-name: box22;
+    animation-timeline: view();
+    animation-range: entery 75% cover 100% ;
+}
+@keyframes box{
+
+    0%{
+        scale: 0.7;
+          transform: translateX(30px);
+          filter: blur(2px) contrast(4);
+          opacity: 0;
+    }
+    100%{
+        scale: 1;
+        transform: translateX(-20px);
+        filter: none;
+        opacity: 1;
+        border: 3px solid rgb(153, 255, 0);
+    }
+
+} 
+@keyframes box22{
+
+    0%{
+        scale: 0.7;
+          transform: translateX(-20px);
+          filter: blur(2px) contrast(4);
+          opacity: 0;
+    }
+    100%{
+        scale: 1;
+        transform: translateX(30px);
+        filter: none;
+         opacity: 1;
+         border: 3px solid rgb(153, 255, 0);
+    }
+
+} 
